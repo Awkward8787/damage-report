@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="docs/banner.png" alt="Damage Report" width="100%">
+  <img src="assets/banner.png" alt="Damage Report" width="100%">
 </p>
 
 # Damage Report
@@ -17,6 +17,18 @@ A Cursor Agent Skill that performs a Greptile-style, evidence-based review of ei
 - or a GitHub pull request.
 
 It produces a persistent engineering report with findings, verification evidence, a Damage Score, Release Readiness, and a direct merge recommendation. It does **not** require Greptile.
+
+
+## How it works
+
+```mermaid
+flowchart TB
+  T[Worktree / branch / PR] --> C[collect-context.sh]
+  C --> R[Evidence-based review]
+  R --> O[Damage Score · Readiness · Findings]
+```
+
+Cursor Agent Skill. Scripts gather context; the agent writes a persistent report using `references/REPORT_FORMAT.md` (see `examples/sample-report.md`).
 
 ## What it checks
 
