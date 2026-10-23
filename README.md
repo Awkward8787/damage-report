@@ -1,4 +1,14 @@
+<p align="center">
+  <img src="docs/banner.png" alt="Damage Report" width="100%">
+</p>
+
 # Damage Report
+
+**Cursor Agent Skill for evidence-based PR and worktree status reports (Greptile-style, no Greptile required).**
+
+[![License: MIT](https://img.shields.io/badge/license-MIT-green)](LICENSE)
+![Shell](https://img.shields.io/badge/Shell-4EAA25?logo=gnubash&logoColor=white)
+![Cursor](https://img.shields.io/badge/Cursor%20Skill-000000)
 
 A Cursor Agent Skill that performs a Greptile-style, evidence-based review of either:
 
