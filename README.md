@@ -109,3 +109,22 @@ The skill follows the open Agent Skills `SKILL.md` format. Detailed scoring and 
 ## License
 
 MIT
+
+## Download
+
+Packaged skill archives are published on the [Releases page](https://github.com/Awkward8787/damage-report/releases); the latest release carries `damage-report-skill-v0.1.0.zip`.
+
+### Install from the release
+1. Download `damage-report-skill-v0.1.0.zip` from the latest release and unzip it.
+2. From the unzipped folder, install the skill:
+   ```bash
+   ./scripts/install.sh --user                               # user-wide (~/.cursor/skills/damage-report/)
+   ./scripts/install.sh --project /absolute/path/to/project  # one project
+   ```
+   Or copy the folder (the one containing `SKILL.md`) to `~/.cursor/skills/damage-report/`.
+
+### Run
+In Cursor Agent:
+```text
+/damage-report
+```
